@@ -1,0 +1,390 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #280350, #031b44); /* Fondo morado + azul */
+    color: white;
+    min-height: 100vh;
+}
+
+/* Encabezado con rosado → morado → azul */
+header {
+    background: linear-gradient(to right, #400d57, #102e63);
+    padding: 30px 0;
+    width: 100%;
+}
+
+/* Contenedor interno para el header */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo a la izquierda, nav a la derecha */
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+/* Navegación */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 0.75;
+}
+
+/* Sección principal */
+main {
+    text-align: center;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    font-size: 1rem;
+    color: #e0e0e0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Botones */
+.bot-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bot-btn {
+    background-color: #331c99; /* Morado oscuro */
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.bot-btn:hover {
+    background-color: #4e148b; /* Más claro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.features {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.feature-card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.feature-card li {
+    margin-bottom: 8px;
+}
+
+.feature-card .note {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.comandos {
+    margin: 60px auto;
+    text-align: center;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.toggle-comandos {
+    display: none;
+}
+
+.comandos-btn {
+    display: block;
+    width: 100%;
+    background-color: #331c99;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    user-select: none;
+}
+
+.comandos-btn:hover {
+    background-color: #4e148b;
+}
+
+.comandos-content {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #fff;
+    display: none;
+}
+
+.toggle-comandos:checked + .comandos-btn + .comandos-content {
+    display: block;
+}
+
+.fundadores {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.fundadores h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.fundadores-cards {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.fundador-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 12px;
+    width: 180px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.fundador-card:hover {
+    transform: translateY(-5px);
+}
+
+.fundador-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid white;
+}
+
+.fundador-card p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.planes h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.planes {
+    margin-top: 50px; /* Puedes ajustar el valor según lo que necesites */
+}
+
+.precio-plan {
+    color: #8c00ff; /* Verde llamativo */
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.precio-plan span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* PIE DE PÁGINA ESTILO FINAL */
+footer {
+    background-color: #000000; /* Fondo negro */
+    color: #ddd;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+/* Color verde para links del footer */
+footer a {
+    color: #0f0; /* verde */
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #7fff7f; /* verde claro */
+}
+
+/* Separador "·" entre textos */
+footer .separator {
+    color: #ddd;
+}
+
+/* MODAL */
+.modal-toggle {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color:  rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2000;
+    overflow-y: auto;
+}
+
+.modal-box {
+    background: #cc00ff;
+    color: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 0 15px rgb(227, 16, 255);
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Mostrar modal cuando checkbox está marcado */
+.modal-toggle:checked + .modal {
+    display: flex;
+}
+
+/* Botón cerrar modal */
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(203, 31, 255);
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: #a200ff;
+}
+
+.modal-box h2 {
+    margin-bottom: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(162, 0, 255);
+    padding-bottom: 8px;
+    color: rgb(153, 0, 255);
+}
+
+/* Enlaces dentro del modal */
+.modal-box a {
+    color: #8c00ff;
+    text-decoration: underline;
+}
+
+.modal-box a:hover {
+    color: #c300ff;
+}
+
+.pagar-btn {
+    background-color: #4b22a6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px; /* Espacio extra arriba del botón */
+    transition: background-color 0.3s;
+}

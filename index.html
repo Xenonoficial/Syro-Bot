@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Syro Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Syro Bot</h1>
+            <nav class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#">Comandos</a>
+                <a href="#">Planes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>El mejor bot para tu servidor</h2>
+            <p class="descripcion">
+                Syro Bot, el mejor bot para tu servidor de Discord contamos con comandos tanto de moderación como de roleplay.
+            </p>
+            <div class="bot-buttons">
+                <a href="https://discord.gg/Z6CtzAHxsj" target="_blank" class="bot-btn">🤖 Discord</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1407544595188813825&permissions=8&scope=bot%20applications.commands" target="_blank" class="bot-btn">👨‍💻 Bot</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CARDS -->
+        <section class="features">
+            <h3>¿Por qué elegir a Syro Bot?</h3>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <h4>🎮 Roleplay</h4>
+                    <ul>
+                        <li>Comandos de Polícia ✅</li>
+                        <li>Comandos de roleplay ✅</li>
+                        <li>Comandos de Verificación ✅</li>
+                        <li>Fáciles de configurar ✅</li>
+                        <li class="note">¡Y muchos mas!</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>🕋 Seguridad</h4>
+                    <ul>
+                        <li>Seguridad anti-raid ✅</li>
+                        <li>Fácil de configurar ✅</li>
+                        <li>Seguridad 24/7 ✅</li>
+                        <li>Base de datos ✅</li>
+                        <li class="note">Gratis hasta el 30 de septiembre</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>🎫 Tickets</h4>
+                    <ul>
+                        <li>Facil de configurar ✅</li>
+                        <li>Diseñalos a tu estilo ✅</li>
+                        <li>Base de datos✅</li>
+                        <li>Activo 24/7 ✅</li>
+                        <li class="note">Gratis hasta el 30 de septiembre</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>⛳ Autoroles</h4>
+                    <ul>
+                        <li>100% personalizado ✅</li>
+                        <li>Fácil de usar ✅</li>
+                        <li>FREE: 4 roles ✅</li>
+                        <li>Emojis personalizados ✅</li>
+                        <li class="note">Gratis hasta el 30 de septiembre</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: BOTÓN COMANDOS -->
+        <section class="comandos">
+            <input type="checkbox" id="toggle-comandos" class="toggle-comandos" />
+            <label for="toggle-comandos" class="comandos-btn">📜 Comandos</label>
+
+            <div class="comandos-content">
+                <code>/hola</code>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FUNDADORES -->
+        <section class="fundadores">
+            <h3>Fundadores</h3>
+            <div class="fundadores-cards">
+                <div class="fundador-card">
+                    <img
+                        src="https://cdn.discordapp.com/attachments/1365896327346524203/1407901312959643648/Diseno_sin_titulo__1_-removebg-preview.png?ex=68a7c9c6&is=68a67846&hm=4d4aa58ce50b21e55bd7f7a9073f3d9371bf7135ef52d547b9ac41e5e6c1ff88&"
+                        alt="xenon_oficial"
+                    />
+                    <p>@xenon_oficial</p>
+                </div>
+                <div class="fundador-card">
+                    <img
+                        src="https://cdn.discordapp.com/attachments/1365896327346524203/1407905859752820836/Diseno_sin_titulo__1_-removebg-preview.png?ex=68a7ce02&is=68a67c82&hm=dc8c1f9767593ab9a09ca57b8c474dcad80aa1ac84f6380e42a588af73f1ba5e&"
+                        alt=".alexiffy_"
+                    />
+                    <p>@.alexiffy_ 🇲🇽</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN PLANES -->
+        <section class="planes">
+            <h3>Planes</h3>
+            <div class="feature-cards">
+
+                <!-- Plan Semanal -->
+                <div class="feature-card">
+                    <h4>💰 Semanal</h4>
+                    <ul>
+                        <div class="precio-plan">2.00 US Dollar</div>
+                        <li>Comandos esenciales ✅</li>
+                        <li>Moderación básica ✅</li>
+                        <li>Soporte limitado ✅</li>
+                        <li>Ideal para servidores pequeños ✅</li>
+                    </ul>
+                    <a href="https://paypal.me/ZapataCuripuma/2" target="_blank" class="bot-btn pago-btn">Pagar Semanal</a>
+                </div>
+
+                <!-- Plan Mensual -->
+                <div class="feature-card">
+                    <h4>💰 Mensual</h4>
+                    <ul>
+                        <div class="precio-plan">6.00 US Dollar</div>
+                        <li>Todos los comandos básicos ✅</li>
+                        <li>Comandos avanzados ✅</li>
+                        <li>Soporte prioritario ✅</li>
+                        <li>Ideal para servidores medianos ✅</li>
+                    </ul>
+                    <a href="https://paypal.me/ZapataCuripuma/6" target="_blank" class="bot-btn pago-btn">Pagar Mensual</a>
+                </div>
+
+                <!-- Plan Anual -->
+                <div class="feature-card">
+                    <h4>💰 Anual</h4>
+                    <ul>
+                        <div class="precio-plan">50.00 US Dollar</div>
+                        <li>Acceso completo a todas las funciones ✅</li>
+                        <li>Soporte 24/7 ✅</li>
+                        <li>Funciones personalizadas </li>
+                        <li>Ideal para servidores grandes ✅</li>
+                    </ul>
+                    <a href="https://paypal.me/ZapataCuripuma/50" target="_blank" class="bot-btn pago-btn">Pagar Anual</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+<footer>
+  © 2025 - Syro Bot Todos los derechos reservados.
+  <label for="modal-terminos" style="color:rgb(119, 0, 255); text-decoration: underline; cursor:pointer; margin-left:6px;">Términos del Servicio</label> |
+  <label for="modal-privacidad" style="color:rgb(119, 0, 255); text-decoration: underline; cursor:pointer; margin-left:6px;">Política de Privacidad</label>
+</footer>
+
+<input type="checkbox" id="modal-terminos" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <label for="modal-terminos" class="close-modal" title="Cerrar">×</label>
+    <h2>Términos del Servicio</h2>
+    <p><strong>Última actualización:</strong> 20 de Agosto de 2025</p>
+    <p>Bienvenido a <strong>Syro,</strong> Al usar Syro|Bot aceptas estos Términos.</p>
+    <p><strong>Conducta:</strong> No usar el bot para fines malisiosos, el bot esta hecho para ayudar a los usuarios con sus servidores.</p>
+    <p><strong>Pagos:</strong> Una vez este hecho el pago no habran reembolsos, amenos que sea por fallas de nuestro bot.</p>
+  </div>
+</div>
+</body>
+</html>
